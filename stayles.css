@@ -127,9 +127,11 @@ body {
 }
 
 /* Küçük ekranlar için (telefon) */
-@media (max-width: 768px) {
+@media (max-width: 375px) {
     body {
-        font-size: 14px;
-        padding: 10px;
+        font-size: 12px;
+        padding: 5px;
     }
+    /* Diğer stil ayarları */
 }
+
