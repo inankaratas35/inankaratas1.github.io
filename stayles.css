@@ -120,3 +120,16 @@ nav .menu .menu-button:hover{
 
    
 /* responsive end */
+/* Geniş ekranlar için (PC) */
+body {
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Küçük ekranlar için (telefon) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
