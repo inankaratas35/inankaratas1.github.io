@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="icon" type="image/x-icon" href="https://seeklogo.com/images/L/lewis-hamilton-logo-19A6A74CB5-seeklogo.com.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Website</title>
+    <style>
+        /* Arka plan resmi tam ekranı kapsayacak şekilde ayarlandı */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Poppins", sans-serif;
+            background-image: url(https://i.pinimg.com/originals/57/1c/6e/571c6ef7cb270967dab7ca75167d63fa.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Arka plan sabit kalır, sayfa kaydıkça hareket etmez */
+        }
+
+        /* Header ve Menü Tasarımı */
+        header {
+            width: 100%;
+            padding: 20px 0;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+        }
+
+        nav .logo img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+        }
+
+        /* İletişim butonu düzenlendi */
+        .menu-button {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-size: 18px;
+        }
+
+        .menu-button:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+        }
+
+        /* Liste Tasarımı */
+        .liste-container {
+            padding: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Yazı gölgesi ile belirginleştirme */
+        }
+
+        .ozel-liste {
+            list-style-type: none; /* Noktaları kaldır */
+            padding-left: 0; /* Sol boşluğu kaldır */
+        }
+
+        .ozel-liste li {
+            color: white;
+            font-size: 18px;
+            padding: 5px 0;
+        }
+
+        /* İçeriğin karartılması için overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Karartma rengi ve opaklığı */
+            z-index: 1;
+        }
+
+        .container {
+            z-index: 2; /* İçeriğin overlay üstünde görünmesini sağlar */
+        }
+
+        .content {
+            color: white;
+            height: calc(100vh - 100px);
+            padding-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!--! header start -->
+    <header class="container">
+        <nav>
+            <div class="logo">
+                <a href="https://www.mercedesamgf1.com/drivers/driver/lewis-hamilton">
+                <img width="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mercedes-Benz_in_Formula_One_logo.svg/2560px-Mercedes-Benz_in_Formula_One_logo.svg.png" alt="">
+            </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkında</a></li>
+                    <li><a href="achievements.html">Başarılar</a></li>
+                    <li><a href="contact.html" class="menu-button">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--! header end -->
+
+    <!--! section start -->
+    <div class="sağ">
+        <div class="liste-container">
+            <ul class="ozel-liste">
+                <li>2023 Formula 1 Dünya Üçüncülüğü</li>
+                <li>2022 Formula 1 Dünya Altıncılığı</li>
+                <li>2021 Formula 1 Dünya İkinciliği</li>
+                <li>2020 Formula 1 Dünya Şampiyonluğu</li>
+                <li>2019 Formula 1 Dünya Şampiyonluğu</li>
+                <li>2018 Formula 1 Dünya Şampiyonluğu</li>
+                <li>2017 Formula 1 Dünya Şampiyonluğu</li>
+                <li>2016 Formula 1 Dünya İkinciliği</li>
+                <li>2015 Formula 1 Dünya Şampiyonluğu</li>
+                <li>2014 Formula 1 Dünya Şampiyonluğu</li>
+                <li>2013 Formula 1 Dünya Dördüncülüğü</li>
+            </ul>
+        </div>
+    </div>
+    <!--! section end -->
+
+</body>
+</html>
