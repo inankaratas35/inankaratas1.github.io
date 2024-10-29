@@ -1,33 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<link rel="icon" type="image/x-icon" href="https://seeklogo.com/images/L/lewis-hamilton-logo-19A6A74CB5-seeklogo.com.png">
-
-    <div class="logo">
-        <a href="https://www.mercedesamgf1.com/drivers/driver/lewis-hamilton" target="_blank">
-        <img width="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mercedes-Benz_in_Formula_One_logo.svg/358px-Mercedes-Benz_in_Formula_One_logo.svg.png?20200127032756" alt="">
-    </a>
-    </div>
-    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="https://seeklogo.com/images/L/lewis-hamilton-logo-19A6A74CB5-seeklogo.com.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css"> <!-- Dosya adı 'stayles' yerine 'styles' olarak düzeltilmiştir -->
     <title>Ana Sayfa</title>
+
     <style>
+        /* Genel Stil */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             font-family: Arial, sans-serif;
-            background-image: url('https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/WinterFebruary/Mercedes/M298835.jpg'); /* Arka plan resmi */
+            background-image: url('https://wallpapers.com/images/hd/hamilton-f1-8qfw565d3v92oelw.jpg');
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; 
         }
 
-        
         nav {
             position: absolute;
             top: 20px;
@@ -37,7 +30,6 @@
             justify-content: flex-end; 
         }
 
-     
         nav a {
             text-decoration: none;
             color: white; 
@@ -47,13 +39,11 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.3); 
-            color: #000; /* Üzerine gelindiğinde yazı siyah olur */
+            color: #000;
         }
 
-        /* Lewis Hamilton yazısı */
         .title {
             position: absolute;
             top: 60px; 
@@ -63,17 +53,71 @@
             color: white;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
         }
+
+        /* Slider Stili */
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slider {
+            position: relative;
+            width: 50%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .slider img {
+            width: 100%;
+            display: block;
+        }
+
+        .buton {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .buton i {
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .buton i:hover {
+            color: #ddd;
+        }
     </style>
 </head>
 <body>
-
-    <!-- Butonlar sağ üstte yatay biçimde yerleştirilmiş -->
+    <!-- Menü -->
     <nav>
         <a href="about.html">Hakkında</a>
         <a href="achievements.html">Başarılar</a>
         <a href="https://x.com/LewisHamilton" target="_blank" class="menu-button">İletişim</a>
     </nav>
 
-   
     <div class="title">Sir Lewis Hamilton</div>
+
+    <!-- Slider Ana Kapsayıcı -->
+    <div class="main">
+        <div class="slider">
+            <img src="https://pbs.twimg.com/media/Fy7siWqWcAQxF95.jpg:large" alt="resim1">
+            <div class="buton">
+                <i class="fa-solid fa-arrow-left" onclick="next()"></i>
+                <i class="fa-solid fa-arrow-right" onclick="back()" ></i>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
 </body>
+</html>
