@@ -1,14 +1,15 @@
 var maining = document.querySelector('img');
 var images = [
-    'hamido/resim22.jpg',
-    'hamido/resim2.jpg',
-    'hamido/resim3.jpg',
-    'hamido/resim4.jpg',
-    'hamido/resim12.jpg'
+    'hamido/resim1.png',
+    'hamido/resim2.png',
+    'hamido/resim3.png',
+    'hamido/resim4.png',
+    'hamido/resim5.png',
+    'hamido/resim6.png'
 ];
 var num = 0;
 const auto = true;
-const intervalTime = 5000;
+const intervalTime = 3500;
 let slideInterval;
 
 
