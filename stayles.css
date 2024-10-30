@@ -60,7 +60,7 @@ header{
     
 }
 
-/* header start */
+
 header nav{
 display: flex;
 justify-content: space-between;
@@ -113,9 +113,9 @@ nav .menu .menu-button:hover{
    color: white;
 
 }
-/* header end */
 
-/* section start */
+
+
 .content{
     color: white;
     height: calc(100vh - 100px);
@@ -134,9 +134,9 @@ nav .menu .menu-button:hover{
 }
 
 
-/* section end */
 
-/* responsive start */
+
+
    @media(max-width:576px){
     .container{
         width: 100%;
@@ -153,19 +153,18 @@ nav .menu .menu-button:hover{
    }
 
    
-/* responsive end */
-/* Geniş ekranlar için (PC) */
+
 body {
     font-size: 18px;
     padding: 20px;
 }
 
-/* Küçük ekranlar için (telefon) */
+
 @media (max-width: 375px) {
     body {
         font-size: 12px;
         padding: 5px;
     }
-    /* Diğer stil ayarları */
-}
+   
 
+}

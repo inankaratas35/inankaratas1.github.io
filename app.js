@@ -33,6 +33,7 @@ function back() {
     num--;
     if (num < 0) {
         num = images.length - 1;
+        
     }
     maining.src = images[num];
 }
