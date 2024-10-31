@@ -4,24 +4,50 @@
     padding: 0;
     box-sizing: border-box;
 }
-.main{
+.slider-background {
+    position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* İçeriğin arka planında kalmasını sağlar */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Otomatik geçiş eklemek için */
+    animation: slide-animation 15s infinite;
 }
-.slider{
-    width: 800px;
-    height: 500px;
-    position: relative;
 
-}
-.slider img{
+.slider img {
     width: 100%;
     height: 100%;
-    border-radius: 7px;
+    object-fit: cover; /* Görselin tam ekranı kaplamasını sağlar */
 }
+
+/* Slider animasyonu */
+@keyframes slide-animation {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Slider'ın üstünde kalmasını sağlar */
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
 .buton{
 position: absolute;
 top: 0;
